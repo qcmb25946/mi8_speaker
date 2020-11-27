@@ -22,21 +22,24 @@
     <ctl name="QUAT_MI2S_TX Format" value="S24_LE" />
     <ctl name="QUAT_MI2S_TX SampleRate" value="KHZ_48" />
     <ctl name="External AMIC2 Mux" value="Dual_ADC" />
-
+# stereo mode
     <path name="deep-buffer-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+		<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />															   
     </path>
-
+# stereo mode
     <path name="low-latency-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+		<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />															   
     </path>
 
     <path name="audio-ull-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
-
+# stereo mode
     <path name="compress-offload-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+		<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia4" value="1" />															   
     </path>
 
     <path name="compress-offload-playback2 speaker">
@@ -549,9 +552,9 @@
         <ctl name="HPHL Volume" value="20" />
         <ctl name="HPHR Volume" value="20" />
     </path>
-
+# replace below with value="CLS_H_HIFI"
     <path name="hph-lowpower-mode">
-        <ctl name="RX HPH Mode" value="CLS_H_LOHIFI" />
+        <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
     </path>
 
     <path name="sidetone-handset">
